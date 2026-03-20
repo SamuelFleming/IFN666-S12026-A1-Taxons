@@ -1,0 +1,22 @@
+{
+  "name": "n10755306-assessment1",
+  "version": "1.0.0",
+  "description": "A server application for managing taxons. This is built for the purpose of IFN666 Assessment 1, Sam Fleming - n10755306",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamuelFleming/IFN666-S12026-A1-Taxons.git"
+  },
+  "author": "Samuel Fleming (QUT - n10755306)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SamuelFleming/IFN666-S12026-A1-Taxons/issues"
+  },
+  "homepage": "https://github.com/SamuelFleming/IFN666-S12026-A1-Taxons#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

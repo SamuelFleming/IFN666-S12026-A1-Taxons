@@ -1,4 +1,5 @@
 const express = require("express");
+const TaxonRouter = require("./taxon");
 const router = express.Router()
 
 getAPI = async (req, res) =>{
@@ -6,5 +7,7 @@ getAPI = async (req, res) =>{
 }
 
 router.get(`/`, getAPI);
+
+router.use('/taxons', TaxonRouter);
 
 module.exports = router;

@@ -16,7 +16,7 @@ router.route("/")
 
 router.route("/:id")
     //.all(validateMongoId('id'))
-    .get(controller.getOne)
+    .get(controller.get)
     .put(controller.update)
     .delete(controller.delete);
 

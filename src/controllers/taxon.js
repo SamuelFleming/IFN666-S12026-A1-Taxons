@@ -4,7 +4,7 @@ exports.getAll = asyncHandler(async (req, res, next) =>{
     res.status(501).json({msg: 'getAll (Taxon Controller) not implmemented'});
 });
 
-exports.getOne = asyncHandler(async (req, res, next) => {
+exports.get = asyncHandler(async (req, res, next) => {
     let id = req.params.id;
     console.log(`Controller reached with ID: ${id}`);
     res.status(501).json({msg: 'getOne (Taxon Controller) not implmemented'});

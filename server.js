@@ -1,7 +1,7 @@
 const express = require("express");
 
 // Put your code here
-const routes = require("./src/routes/index.js");
+const apiRouter = require("./src/routes/index.js");
 
 const app = express();
 
@@ -12,7 +12,7 @@ const port = 3000;
 
 
 // Put your code here
-app.use(`/api`, routes);
+app.use(`/api`, apiRouter);
 
 app.get(`/`, (req, res) => {
   res.json('Hello, IFN666!')

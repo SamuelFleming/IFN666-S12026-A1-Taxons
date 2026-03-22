@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/SamuelFleming/IFN666-S12026-A1-Taxons#readme",
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "express-async-handler": "^1.2.0"
   }
 }

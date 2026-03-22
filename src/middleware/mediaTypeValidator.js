@@ -1,7 +1,7 @@
 const mediaTypeValidator = (req, res, next) => {
     console.log(`mediaTypeValidator  for request (headers): ${req.toString()}`);
     //only check requests that SHOULD have a body
-    const methodsWithBody = ["POST", "PUT", "PATCH"];
+    const methodsWithBody = ["POST", "PUT"];
 
     if (methodsWithBody.includes(req.method)) {
         const contentType = req.headers["content-type"];

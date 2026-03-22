@@ -2,22 +2,15 @@ const express = require("express");
 const router = express.Router();
 
 const controller = require("../controllers/taxon");
-
-// // Here are the list of endpoints
-// GET /api/taxons to retrieve all taxons.
-// GET /api/taxons/:id to retrieve a particular taxon.
-// POST /api/taxons to create a new taxon.
-// PUT /api/taxons/:id to update an existing taxon.
-// DELETE /api/taxons/:id to remove an existing taxon.
+const mediaTypeValidator = require("../middleware/mediaTypeValidator");
 
 router.route("/")
     .get(controller.getAll)
-    .post(controller.create);
+    .post(mediaTypeValidator, controller.create);
 
 router.route("/:id")
-    //.all(validateMongoId('id'))
     .get(controller.get)
-    .put(controller.update)
+    .put(mediaTypeValidator, controller.update)
     .delete(controller.delete);
 
 module.exports = router;

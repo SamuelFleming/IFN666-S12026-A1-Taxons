@@ -2,13 +2,11 @@ const express = require("express");
 
 // Put your code here
 const apiRouter = require("./src/routes/index.js");
-const mediaTypeValidator = require("./src/middleware/mediaTypeValidator");
 
 const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(mediaTypeValidator);
 
 const port = 3000;
 
